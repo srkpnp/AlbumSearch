@@ -2,7 +2,7 @@ import React, { Component, useState } from "react";
 
 export const LoginHooks = () => {
 
-    const [email, setEmail] = useState("karthick@tcs.com");
+    const [email, setEmail] = useState("srikanthk@gmail.com");
     const [password, setPassword] = useState();
     const [errorMsg, setErrorMsg] = useState();
     // useEffect( () => {
