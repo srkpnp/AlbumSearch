@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[` HomeContainer Should test mapStatetoPRops method 1`] = `
+Object {
+  "decrement": [Function],
+  "fetchGithubData": [Function],
+  "increment": [Function],
+  "reset": [Function],
+  "updateEntity": [Function],
+  "updateSearchText": [Function],
+}
+`;
