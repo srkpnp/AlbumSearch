@@ -47,8 +47,10 @@ export const fetchData = (data) => {
   }
 
 export const fetchGithubData = (request) => {
-  console.log('request--->',request);
-  const apiUrl = 'https://itunes.apple.com/search?term='+request.text+'&country=us&entity='+request.entity.toLowerCase();
+   console.log('request--->',request);
+  let entity = request.entity === 'Artist' ?  'musicArtist' :request.entity.toLowerCase();
+
+  const apiUrl = 'https://itunes.apple.com/search?term='+request.text+'&country=us&entity='+entity;
   //const apiUrl = 'https://itunes.apple.com/search?term='+request.text+'&country=us&entity=album';
     return (dispatch) => {    
       dispatch(fetchData([]));
